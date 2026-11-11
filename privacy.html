@@ -23,21 +23,21 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 56px 0; }
 <main>
 <article lang="ru">
 <h1>Политика конфиденциальности NTranslate</h1>
-<p class="date">Обновлена 7 ноября 2026 года. <a href="#en">English version below</a></p>
+<p class="date">Обновлена 11 ноября 2026 года. <a href="#en">English version below</a></p>
 
 <p>NTranslate — расширение для браузера, которое переводит сайты, текст, картинки и субтитры YouTube с помощью моделей ИИ. Разработчик не содержит серверов для расширения и не получает ваши данные: всё работает между вашим браузером и сервисами, описанными ниже.</p>
 
 <h2>Что передаётся и кому</h2>
 <p>Ничего не передаётся, пока вы не дали согласие в расширении. Отключить его можно в любой момент в разделе настроек «Подключение». После согласия передача происходит только когда вы запускаете перевод или сами включили автоматический перевод.</p>
 <ul>
-<li><b>OpenRouter и поставщик выбранной вами модели</b> получают то, что вы переводите: текст страницы, выделенный или введённый текст, картинки и снимки выбранной области экрана, субтитры, а для озвучки текст, который нужно прочитать. Вместе с этим отправляется контекст для точного перевода: адрес сайта, заголовок и описание страницы, для YouTube название, автор, категория, теги и описание видео. Запросы подписаны вашим ключом OpenRouter.</li>
+<li><b>OpenRouter и поставщик выбранной вами модели</b> получают то, что вы переводите: текст страницы, выделенный или введённый текст, картинки и снимки выбранной области экрана, субтитры, а для озвучки текст, который нужно прочитать. Вместе с этим отправляется контекст для точного перевода: адрес сайта, заголовок и описание страницы, для YouTube название, автор, категория, теги и описание видео. Запросы подписаны вашим ключом OpenRouter. При проверке ключа расширение запрашивает у OpenRouter состояние счёта: баланс и оставшиеся на сегодня бесплатные запросы. Кнопка «Проверить» у модели отправляет ей короткий тестовый текст, заданный в расширении, без ваших данных.</li>
 <li><b>Google Fonts</b> получает названия шрифтов, если включена настройка «Сохранять шрифты сайта». Текст страницы туда не отправляется.</li>
 <li><b>YouTube</b> отдаёт субтитры видео, которое вы смотрите, в вашем обычном сеансе. Расширение ничего туда не отправляет.</li>
 </ul>
 <p>Этими данными дальше распоряжаются <a href="https://openrouter.ai/privacy">OpenRouter</a> и поставщик модели по своим правилам. Настройки хранения и обучения на запросах можно задать в аккаунте OpenRouter. Не переводите то, что нельзя передавать третьим лицам.</p>
 
 <h2>Что хранится в браузере</h2>
-<p>На вашем устройстве, в хранилище расширения, лежат: ключ OpenRouter, настройки, сохранённые переводы страниц и субтитров, глоссарии, скачанные шрифты и статистика расходов. Ключ хранится только в этом браузере и не попадает в файл экспорта настроек. Сохранённые переводы удаляются в разделе «Данные», ключ стирается в разделе «Подключение», а удаление расширения стирает всё сразу.</p>
+<p>На вашем устройстве, в хранилище расширения, лежат: ключ OpenRouter, настройки, сохранённые переводы страниц и субтитров, глоссарии, скачанные шрифты, статистика расходов, последнее состояние счёта OpenRouter и результаты проверки моделей. Ключ хранится только в этом браузере и не попадает в файл экспорта настроек. Сохранённые переводы удаляются в разделе «Данные», ключ стирается в разделе «Подключение», а удаление расширения стирает всё сразу.</p>
 
 <h2>Чего расширение не делает</h2>
 <ul>
@@ -55,21 +55,21 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 56px 0; }
 
 <article lang="en" id="en">
 <h1>NTranslate Privacy Policy</h1>
-<p class="date">Updated November 7, 2026</p>
+<p class="date">Updated November 11, 2026</p>
 
 <p>NTranslate is a browser extension that translates websites, text, images and YouTube subtitles with AI models. The developer runs no servers for the extension and does not receive your data: everything happens between your browser and the services described below.</p>
 
 <h2>What is sent, and to whom</h2>
 <p>Nothing is sent until you give consent inside the extension. You can withdraw it at any time in the Connection section of the settings. After consent, data is sent only when you start a translation or have turned on automatic translation yourself.</p>
 <ul>
-<li><b>OpenRouter and the provider of the model you chose</b> receive what you translate: page text, selected or typed text, images and screenshots of an area you select, subtitles, and for read-aloud the text to be read. Context for an accurate translation goes with it: the site address, page title and description, and for YouTube the video title, author, category, tags and description. Requests are signed with your OpenRouter key.</li>
+<li><b>OpenRouter and the provider of the model you chose</b> receive what you translate: page text, selected or typed text, images and screenshots of an area you select, subtitles, and for read-aloud the text to be read. Context for an accurate translation goes with it: the site address, page title and description, and for YouTube the video title, author, category, tags and description. Requests are signed with your OpenRouter key. When you check your key, the extension asks OpenRouter for the state of your account: the balance and the free requests left for today. The Check button next to a model sends it a short test text built into the extension, with none of your data.</li>
 <li><b>Google Fonts</b> receives font names if the "Keep site fonts" setting is on. Page text is not sent there.</li>
 <li><b>YouTube</b> provides the subtitles of the video you are watching, in your normal session. The extension sends nothing to it.</li>
 </ul>
 <p><a href="https://openrouter.ai/privacy">OpenRouter</a> and the model provider handle this data under their own terms. Retention and training preferences can be set in your OpenRouter account. Do not translate anything you must not share with third parties.</p>
 
 <h2>What is stored in your browser</h2>
-<p>On your device, in the extension's storage: your OpenRouter key, settings, saved page and subtitle translations, glossaries, downloaded fonts and spending statistics. The key stays in this browser and is not included in the settings export. Saved translations can be deleted in the Data section, the key can be erased in the Connection section, and removing the extension erases everything at once.</p>
+<p>On your device, in the extension's storage: your OpenRouter key, settings, saved page and subtitle translations, glossaries, downloaded fonts, spending statistics, the last known state of your OpenRouter account and the results of model checks. The key stays in this browser and is not included in the settings export. Saved translations can be deleted in the Data section, the key can be erased in the Connection section, and removing the extension erases everything at once.</p>
 
 <h2>What the extension does not do</h2>
 <ul>
